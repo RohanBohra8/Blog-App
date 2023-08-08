@@ -26,7 +26,8 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault(); // jab bhi form submit hiota hai toh page refresh hota hai , uske behaviour ko rokne ke liye
     try {
-      const { data } = await axios.post("/api/v1/user/register", {
+      //https://motionless-fox-life-jacket.cyclic.app  || /api/v1/user/register
+      const { data } = await axios.post("https://motionless-fox-life-jacket.cyclic.app/api/v1/user/register", {
         username: inputs.name,
         email: inputs.email,
         password: inputs.password,
