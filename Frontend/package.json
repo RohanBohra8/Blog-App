@@ -1,6 +1,6 @@
 {
   "name": "blog-app",
-  "proxy": "http://localhost:3001",
+  "proxy": "https://motionless-fox-life-jacket.cyclic.app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

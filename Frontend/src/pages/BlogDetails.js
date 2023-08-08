@@ -27,11 +27,10 @@ const BlogDetails = () => {
         }
     }
 
-    useEffect(()=>{
-    
+    useEffect(()=>{  
       getBlogDetail();
-    
     },[id]); 
+
     
     //id ke base me useEffect run krega 
     

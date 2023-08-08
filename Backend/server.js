@@ -47,3 +47,4 @@ const PORT =  process.env.PORT || 3001
 app.listen(PORT,()=> {
     console.log(`Server Running on ${process.env.DEV_MODE} mode: ${PORT}`.bgCyan.white) // "." ke aage ka part colors wale package ka hai
 })
+
