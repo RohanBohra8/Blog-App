@@ -12,7 +12,7 @@ const UserBlogs = () => {
   const getUserBlogs = async () => {
     try {
       const id = localStorage.getItem("userId");
-      const { data } = await axios.get(`/api/v1/blog/user-blog/${id}`);
+      const { data } = await axios.get(`https://motionless-fox-life-jacket.cyclic.app/api/v1/blog/user-blog/${id}`); //change
       //agar data milega toh usko use state se set krdo
       if (data?.success) {
         setBlogs(data?.userBlog.blogs); //blogs controller me jake dekho ... UserBlog is the name of blogs of a particular user

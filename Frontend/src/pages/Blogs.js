@@ -8,7 +8,8 @@ const Blogs = () => {
   //get all blogs from api
   const getAllBlogs = async () => {
     try {
-      const { data } = await axios.get("/api/v1/blog/all-blogs");
+      //change
+      const { data } = await axios.get("https://motionless-fox-life-jacket.cyclic.app/api/v1/blog/all-blogs");
       if (data?.success) {
         setBlogs(data?.blogs); // data&&data.success is same as data?.success
       }

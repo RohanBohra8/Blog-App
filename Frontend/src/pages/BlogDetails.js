@@ -13,7 +13,7 @@ const BlogDetails = () => {
     //get blog details
     const getBlogDetail = async() => {
         try{
-            const {data} = await axios.get(`/api/v1/blog/get-blog/${id}`)
+            const {data} = await axios.get(`https://motionless-fox-life-jacket.cyclic.app/api/v1/blog/get-blog/${id}`) //change
             if(data?.success){
                 setBlog(data?.blog); //blogController me jake dekho GET SINLGE BLOG me "blog"  return ho rha hai , so idhar bhi "blog" same spelling use kia
                 setInputs({
@@ -51,7 +51,8 @@ const BlogDetails = () => {
         e.preventDefault();
         //ab hum ise post krege
         try{
-            const {data} = await axios.put(`/api/v1/blog/update-blog/${id}`,{
+          //change
+            const {data} = await axios.put(`https://motionless-fox-life-jacket.cyclic.app/api/v1/blog/update-blog/${id}`,{
                 title:inputs.title,
                 description:inputs.description,
                 image:inputs.image,

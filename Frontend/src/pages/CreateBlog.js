@@ -28,7 +28,8 @@ const CreateBlog = () => {
     e.preventDefault();
     //ab hum ise post krege
     try{
-        const {data} = await axios.post('/api/v1/blog/create-blog',{
+      //change
+        const {data} = await axios.post('https://motionless-fox-life-jacket.cyclic.app/api/v1/blog/create-blog',{
             title:inputs.title,
             description:inputs.description,
             image:inputs.image,

@@ -31,7 +31,7 @@ export default function BlogCard({
   //to delete a blog 
   const handleDelete = async () => {
     try {
-      const { data } = await axios.delete(`/api/v1/blog/delete-blog/${id}`);
+      const { data } = await axios.delete(`https://motionless-fox-life-jacket.cyclic.app/api/v1/blog/delete-blog/${id}`);
       if (data?.success) {
         toast.success("Blog Deleted");
         //navigate('my-blogs')
